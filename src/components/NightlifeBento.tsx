@@ -115,8 +115,7 @@ export default function NightlifeBento() {
           {/* Label — always visible */}
           <span style={{
             position: "absolute",
-            bottom: hovered === i ? "auto" : 16,
-            top: hovered === i ? "auto" : "auto",
+            bottom: hovered === i ? 56 : 16,
             left: 16,
             color: "#fff",
             fontFamily: "var(--font-sans)",
@@ -126,7 +125,6 @@ export default function NightlifeBento() {
             textTransform: "uppercase",
             opacity: 0.9,
             transition: "bottom 0.3s ease",
-            ...(hovered === i ? { bottom: 56 } : { bottom: 16 }),
           }}>
             {card.label}
           </span>
